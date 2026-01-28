@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "admin_commands": {
+    "/spam": {"desc": "Spam user", "usage": "/spam @user message"},
+    "/stopspam": {"desc": "Stop spam", "usage": "/stopspam"},
+    "/status": {"desc": "Bot status", "usage": "/status"},
+    "/kill": {"desc": "Kill bot", "usage": "/kill"}
+  },
+  "public_commands": {
+    "/ping": {"desc": "Check alive", "usage": "/ping"},
+    "/uptime": {"desc": "Running time", "usage": "/uptime"},
+    "/help": {"desc": "Show commands", "usage": "/help"}
+  },
+  "spam_active": {},
+  "target_spam": {}
+}
