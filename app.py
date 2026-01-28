@@ -189,9 +189,7 @@ def process_command(gid, msg_obj, thread, admin_ids):
                     for cmd_name, info in COMMANDS_CONFIG["public_commands"].items():
                         help_msg += f"{cmd_name} - {info['desc']}"
                     if is_admin:
-                        help_msg += "
-👑 ADMIN:
-" + "
+                        help_msg += "👑 ADMIN:" + "
 ".join([f"{k} - {v['desc']}" for k,v in COMMANDS_CONFIG["admin_commands"].items()])
                     CLIENT.direct_send(help_msg, thread_ids=[gid])
                 return
