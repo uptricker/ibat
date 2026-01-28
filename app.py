@@ -185,11 +185,9 @@ def process_command(gid, msg_obj, thread, admin_ids):
                 elif cmd == "/uptime":
                     CLIENT.direct_send(f"⏱️ Uptime: {uptime()}", thread_ids=[gid])
                 elif cmd == "/help":
-                    help_msg = "📋 COMMANDS:
-"
+                    help_msg = "📋 COMMANDS:"
                     for cmd_name, info in COMMANDS_CONFIG["public_commands"].items():
-                        help_msg += f"{cmd_name} - {info['desc']}
-"
+                        help_msg += f"{cmd_name} - {info['desc']}"
                     if is_admin:
                         help_msg += "
 👑 ADMIN:
